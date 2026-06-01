@@ -1,0 +1,58 @@
+import { HashRouter, Routes, Route } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import About from "./pages/About";
+// import Plans from "./pages/Plans";
+// import Price from "./pages/Price";
+import Career from "./pages/Career";
+import Contact from "./pages/Contact";
+import Faqpage from "./pages/Faqpage";
+
+// Static service pages
+import PropertyManagement from "./pages/PropertyManagement";
+import TenantManagement from "./pages/TenantManagement";
+import PlotMonitoring from "./pages/PlotMonitoring";
+import PackersMovers from "./pages/PackersMovers";
+import ApartmentMaintenance from "./pages/ApartmentMaintenance";
+import BusinessInvestmentPlan from "./pages/BusinessInvestmentPlan";
+import ResidentialInvestmentPlan from "./pages/ResidentialInvestmentPlan";
+import RealEstate from "./pages/RealEstate";
+import BuildingConstruction from "./pages/BuildingConstruction";
+
+function App() {
+  return (
+    <HashRouter>
+      <div>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          {/* <Route path="/plans" element={<Plans />} /> */}
+          {/* <Route path="/pricing" element={<Price />} /> */}
+          <Route path="/career" element={<Career />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/Faqpage" element={<Faqpage />} />
+          
+          {/* Static service pages */}
+          <Route path="/property-management" element={<PropertyManagement />} />
+          <Route path="/tenant-management" element={<TenantManagement />} />
+          <Route path="/plot-monitoring" element={<PlotMonitoring />} />
+          <Route path="/packers-movers" element={<PackersMovers />} />
+          <Route path="/RealEstate" element={<RealEstate />} />
+          <Route path="/BuildingConstruction" element={<BuildingConstruction />} />
+          <Route path="/business-investment-plan" element={<BusinessInvestmentPlan />} />
+          <Route path="/apartment-maintenance" element={<ApartmentMaintenance />} />
+          <Route path="/residentialinvestmentplan" element={<ResidentialInvestmentPlan />} />
+        </Routes>
+        <Footer />
+      </div>
+    </HashRouter>
+  );
+}
+
+export default App;
