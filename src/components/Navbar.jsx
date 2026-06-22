@@ -14,7 +14,7 @@ const Navbar = () => {
             width="80px"
             className="d-inline-block align-text-top me-2 rounded-3"
           /><span className="fw-bold" style={{ color: "#228161" }}>
-            Sonachala Square
+            Sonachala 
           </span>
         </Link>
 

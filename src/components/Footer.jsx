@@ -82,7 +82,7 @@ const Footer = () => {
                   Registered Office: Hrify Technologies Pvt Ltd, Annai Parvathi Nagar, Vengikkal, Tiruvannamalai, Tamil Nadu 606604
             </p>
             <p className="d-flex align-items-center gap-2 text-light mb-2">
-              <FaEnvelope /> SonachalaSquareofficial@gmail.com
+              <FaEnvelope /> Sonachalaofficial@gmail.com
             </p>
             {/* <p className="d-flex align-items-center gap-2 text-light mb-2">
               <FaPhoneAlt /> US: +1-248-275-5811
@@ -97,7 +97,7 @@ const Footer = () => {
         <div className="border-top border-secondary pt-3 mt-4 text-center small text-secondary">
           <p className="mb-0">
             Copyright © 2025 by{" "}
-            <span style={{ color: "#228161" }}>Sonachala Square</span> | All rights
+            <span style={{ color: "#228161" }}>Sonachala </span> | All rights
             reserved |{" "}
             <a href="#" className=" text-decoration-none"  style={{ color: "#228161" }}>
               Terms and Conditions
